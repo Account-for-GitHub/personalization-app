@@ -1,9 +1,9 @@
 package app
 
 abstract class Something {
-    protected abstract val description: String
+    open val description: String = "no description yet"
 
-    open fun achieveDescription(): String = description
+    open fun description(): String = description
 
     abstract fun cost(): Int
 }
